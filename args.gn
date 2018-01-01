@@ -1,0 +1,15 @@
+target_os = "android"
+target_cpu = "arm"  # (default)
+is_debug = false  # (default)
+# Other args you may want to set:
+is_component_build = false
+is_clang = true
+symbol_level = 1  # Faster build with fewer symbols. -g1 rather than -g2
+enable_incremental_javac = false  # Much faster; experimental
+android_ndk_root = "/home/malin/ndk/android-ndk-r12b"
+android_sdk_root = "/home/malin/sdk"
+android_sdk_build_tools_version = "27.0.1"
+disable_file_support = true
+disable_ftp_support = true
+enable_websockets = false
+use_platform_icu_alternatives = true
