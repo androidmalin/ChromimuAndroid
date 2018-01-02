@@ -102,7 +102,7 @@ public class CronetSampleActivity extends Activity {
             CronetSampleActivity.this.runOnUiThread(new Runnable() {
                 public void run() {
                     mResultText.setText(text);
-                    //promptForURL(url);
+                    promptForURL(url);
                 }
             });
         }
