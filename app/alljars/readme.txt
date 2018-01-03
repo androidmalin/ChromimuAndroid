@@ -6,4 +6,9 @@ find . -name "*.jar" -type f | grep -v third_party | grep -v testing | xargs -i 
 
 
 
+
+libs/
 find . -name "*.jar" -type f | grep -v third_party | grep -v testing | grep -v build | grep -v interface | grep -v test | xargs -i cp {} /home/malin/github_demo/ChromimuAndroid/app/libs
+
+
+

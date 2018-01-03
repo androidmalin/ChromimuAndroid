@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':lib_base_java', ':lib_cronet_api', ':lib_cronet_impl_all', ':lib_url_java', ':lib_net_java'
