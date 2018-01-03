@@ -7,6 +7,7 @@ package com.malin.chromium;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -39,6 +40,7 @@ public class CronetSampleActivity extends Activity {
     private String mUrl;
     private TextView mResultText;
     private TextView mReceiveDataText;
+    private Handler mHander = new Handler();
 
 
     private class SimpleUrlRequestCallback extends UrlRequest.Callback {
@@ -75,6 +77,7 @@ public class CronetSampleActivity extends Activity {
 
             byteBuffer.clear();
             request.read(byteBuffer);
+
         }
 
         @Override
@@ -91,6 +94,13 @@ public class CronetSampleActivity extends Activity {
                     //promptForURL(url);
                 }
             });
+
+            mHander.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    stopNetLog();
+                }
+            }, 1000);
         }
 
         @Override
@@ -99,12 +109,21 @@ public class CronetSampleActivity extends Activity {
 
             final String url = mUrl;
             final String text = "Failed " + mUrl + " (" + error.getMessage() + ")";
+
+
             CronetSampleActivity.this.runOnUiThread(new Runnable() {
                 public void run() {
                     mResultText.setText(text);
                     promptForURL(url);
                 }
             });
+
+            mHander.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    stopNetLog();
+                }
+            }, 1000);
         }
     }
 

@@ -7,9 +7,37 @@ is_clang = true
 symbol_level = 1  # Faster build with fewer symbols. -g1 rather than -g2
 enable_incremental_javac = false  # Much faster; experimental
 android_ndk_root = "/home/malin/ndk/android-ndk-r12b"
+android_ndk_version = "r12b"
 android_sdk_root = "/home/malin/sdk"
-android_sdk_build_tools_version = "27.0.1"
+android_sdk_platform_version = "27"
+android_sdk_build_tools_version = "27.0.3"
 disable_file_support = true
 disable_ftp_support = true
 enable_websockets = false
 use_platform_icu_alternatives = true
+
+
+
+#####################3
+use_errorprone_java_compiler = true
+arm_use_neon = false
+target_os = "android"
+enable_websockets = false
+disable_file_support = true
+disable_ftp_support = true
+disable_brotli_filter = false
+use_platform_icu_alternatives = true
+enable_reporting = false
+is_component_build = false
+ignore_elf32_limitations = true
+use_partition_alloc = false
+include_transport_security_state_preload_list = false
+android_ndk_root = "/home/malin/ndk/android-ndk-r12b"
+android_ndk_version = "r12b"
+android_sdk_root = "/home/malin/sdk"
+android_sdk_platform_version = "27"
+android_sdk_build_tools_version = "27.0.3"
+
+
+
+echo "android_ndk_root = "/home/malin/ndk/android-ndk-r12b"" >> out/Release/args.gn
