@@ -16,11 +16,11 @@ android {
             //https://stackoverflow.com/a/42130853/3326683
             //https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx
             buildConfigField "boolean", "DCHECK_IS_ON", "false"
-
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
+            buildConfigField "boolean", "DCHECK_IS_ON", "false"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
