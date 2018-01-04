@@ -17,6 +17,20 @@ android {
             //https://stackoverflow.com/a/42130853/3326683
             //https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx
 
+//cat chromium/src/out/Release/gen/base/base_build_config_gen/java_cpp_template/org/chromium/base/BuildConfig.java
+//            package org.chromium.base;
+//            public class BuildConfig {
+//                public static boolean isMultidexEnabled() {
+//                    return false;
+//                }
+//                public static final boolean DCHECK_IS_ON = false;
+//                public static final String[] COMPRESSED_LOCALES =
+//                        {};
+//                public static final String[] UNCOMPRESSED_LOCALES =
+//                        {};
+//            }
+
+
             buildConfigField "boolean", "DCHECK_IS_ON", "false"
             buildConfigField "boolean", "isMultidexEnabled", "false"
 

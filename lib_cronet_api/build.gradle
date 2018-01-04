@@ -11,8 +11,6 @@ android {
         versionName "1.0"
     }
 
-    packageBuildConfig(false)
-
     buildTypes {
         release {
             minifyEnabled false
