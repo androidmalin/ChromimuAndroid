@@ -1,0 +1,45 @@
+malin@malin:/onet/malin/chromium/src/out/Release$ ll
+总用量 221908
+drwx------ 19 malin malin      4096 1月   3 15:15 ./
+drwxrwxr-x  4 malin malin      4096 1月   3 14:47 ../
+drwxrwxr-x  3 malin malin      4096 1月   3 14:55 android_lint_cache/
+drwxrwxr-x  2 malin malin      4096 1月   3 15:15 apks/
+-rw-rw-r--  1 malin malin       634 1月   3 14:55 args.gn
+drwxrwxr-x  3 malin malin      4096 1月   3 15:15 bin/
+-rw-rw-r--  1 malin malin   5142319 1月   3 14:55 build.ninja
+-rw-rw-r--  1 malin malin    148755 1月   3 14:55 build.ninja.d
+-rw-rw-r--  1 malin malin       389 1月   3 14:55 build_vars.txt
+drwx------  4 malin malin      4096 1月   3 15:04 clang_x64/
+drwx------  2 malin malin      4096 1月   3 14:47 clang_x86/
+drwx------  4 malin malin      4096 1月   3 15:14 clang_x86_v8_arm/
+drwxrwxr-x  7 malin malin      4096 1月   3 15:07 cronet/
+drwxrwxr-x  2 malin malin      4096 1月   3 14:57 exe.unstripped/
+drwx------ 34 malin malin      4096 1月   3 15:15 gen/
+drwx------ 29 malin malin      4096 1月   3 14:47 gen.runtime/
+-rw-rw-r--  2 malin malin   6500240 12月  9 11:24 icudtl.dat
+-rwxrwxr-x  2 malin malin   2765504 1月   3 15:07 libcronet.65.0.3289.0.so*
+-rw-rw-r--  1 malin malin      3635 1月   3 15:07 libcronet.65.0.3289.0.so.TOC
+-rw-rw-r--  1 malin malin         0 1月   3 15:07 libcronet.65.0.3289.0.so.whitelist
+-rwxrwxr-x  2 malin malin   1773920 1月   3 15:15 libcronet_tests.so*
+-rw-rw-r--  1 malin malin     11582 1月   3 15:15 libcronet_tests.so.TOC
+-rw-rw-r--  1 malin malin         0 1月   3 15:15 libcronet_tests.so.whitelist
+drwxrwxr-x 10 malin malin      4096 1月   3 15:04 lib.java/
+-rwxrwxr-x  1 malin malin    938080 1月   3 15:15 libnet_java_test_native_support.so*
+-rw-rw-r--  1 malin malin      9997 1月   3 15:15 libnet_java_test_native_support.so.TOC
+-rw-rw-r--  1 malin malin         0 1月   3 15:15 libnet_java_test_native_support.so.whitelist
+-rwxrwxr-x  2 malin malin    718896 1月   3 14:57 libnetty-tcnative.so*
+-rw-rw-r--  1 malin malin     24302 1月   3 14:57 libnetty-tcnative.so.TOC
+-rw-rw-r--  1 malin malin         0 1月   3 14:57 libnetty-tcnative.so.whitelist
+drwxrwxr-x  2 malin malin      4096 1月   3 15:15 lib.unstripped/
+-rwxrwxr-x  1 malin malin    214540 1月   3 14:57 md5sum_bin*
+lrwxrwxrwx  1 malin malin        20 1月   3 15:04 md5sum_bin_host -> clang_x64/md5sum_bin*
+drwxrwxr-x  2 malin malin      4096 1月   3 14:57 md5sum_dist/
+-rw-rw-r--  1 malin malin    217426 1月   3 14:59 natives_blob.bin
+-rw-rw-r--  1 malin malin   2100728 1月   3 15:15 .ninja_deps
+-rw-rw-r--  1 malin malin    693535 1月   3 15:15 .ninja_log
+drwx------ 36 malin malin      4096 1月   3 14:47 obj/
+drwxrwxr-x  6 malin malin      4096 1月   3 15:04 pyproto/
+drwxrwxr-x  3 malin malin      4096 1月   3 14:56 resource_zips/
+drwxrwxr-x  2 malin malin      4096 1月   3 15:15 size-info/
+-rw-rw-r--  1 malin malin   1391192 1月   3 15:14 snapshot_blob.bin
+-rw-rw-r--  1 malin malin 204454181 1月   3 14:55 toolchain.ninja
