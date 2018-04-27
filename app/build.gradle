@@ -17,10 +17,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+
+    android {
+        compileOptions {
+            sourceCompatibility 1.8
+            targetCompatibility 1.8
+        }
     }
+
 }
 
 dependencies {
@@ -28,8 +32,8 @@ dependencies {
     implementation rootProject.ext.dependencies["appcompat-v7"]
     implementation rootProject.ext.dependencies["support-annotations"]
     implementation rootProject.ext.dependencies["multidex"]
-    implementation project(':lib_cronet_api')
-    implementation project(':lib_cronet_impl_all')
-    implementation project(':lib_url_java')
-    implementation project(':lib_base_java')
+    implementation project(':cronet_api')
+    implementation project(':cronet_impl_native_java')
+    implementation project(':cronet_impl_common_java')
+    implementation project(':cronet_impl_platform_java')
 }

@@ -1,1 +1,11 @@
-include ':app', ':lib_base_java', ':lib_cronet_api', ':lib_cronet_impl_all', ':lib_url_java', ':lib_net_java'
+include ':app'
+include ':cronet_api'
+include ':cronet_impl_native_java'
+include ':cronet_impl_common_java'
+include ':cronet_impl_platform_java'
+
+//include ':lib_base_java'
+//include ':lib_cronet_api'
+//include ':lib_cronet_impl_all'
+//include ':lib_url_java'
+//include ':lib_net_java'
