@@ -1,5 +1,6 @@
 
 
+
 module
 cronet_api,
 cronet_impl_common_java,
@@ -82,3 +83,17 @@ https://www.jianshu.com/p/08f0701e86de
  2089  cp LoadState.java /home/malin/github_demo/ChromimuAndroid/lib_cronet_impl_all/src/main/java/org/chromium/net/impl
  2090  cp UrlRequestError.java /home/malin/github_demo/ChromimuAndroid/lib_cronet_impl_all/src/main/java/org/chromium/net/impl
 
+
+
+malin@malin:~/malin_github/ChromimuAndroid$ git push origin develop
+对象计数中: 179, 完成.
+Delta compression using up to 8 threads.
+压缩对象中: 100% (147/147), 完成.
+写入对象中: 100% (179/179), 35.37 MiB | 1.62 MiB/s, 完成.
+Total 179 (delta 36), reused 0 (delta 0)
+remote: Resolving deltas: 100% (36/36), completed with 14 local objects.
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: warning: See http://git.io/iEPt8g for more information.
+remote: warning: File Cronet_Release/cronet/test/symbols/armeabi-v7a/libcronet_tests.so is 74.96 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+To github.com:androidmalin/ChromimuAndroid.git
+   294a147..05f56ff  develop -> develop

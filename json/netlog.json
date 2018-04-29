@@ -865,7 +865,7 @@
       "QUIC_STREAM_PEER_GOING_AWAY": 5,
       "QUIC_UNAUTHORIZED_PROMISE_URL": 10
     },
-    "timeTickOffset": "1514945841617"
+    "timeTickOffset": "1524985261473"
   },
   "events": [
     {
@@ -875,14 +875,13 @@
         "edns0": false,
         "nameservers": [
           "10.20.0.10:53",
-          "10.20.0.36:53",
-          "8.8.8.8:53"
+          "10.20.0.36:53"
         ],
         "ndots": 1,
         "num_hosts": 2,
         "rotate": false,
         "search": [],
-        "timeout": 1.0,
+        "timeout": 1,
         "unhandled_options": false,
         "use_local_ipv6": false
       },
@@ -891,8 +890,25 @@
         "id": 1,
         "type": 0
       },
-      "time": "17958355",
+      "time": "24650060",
       "type": 319
+    },
+    {
+      "params": {
+        "new_config": {
+          "single_proxy": [
+            "10.31.146.25:8888"
+          ],
+          "source": "UNKNOWN"
+        }
+      },
+      "phase": 0,
+      "source": {
+        "id": 2,
+        "type": 0
+      },
+      "time": "24650261",
+      "type": 27
     },
     {
       "params": {
@@ -901,10 +917,10 @@
       },
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960805",
+      "time": "24657533",
       "type": 2
     },
     {
@@ -913,28 +929,28 @@
       },
       "phase": 0,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960805",
+      "time": "24657533",
       "type": 102
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960805",
+      "time": "24657533",
       "type": 98
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657533",
       "type": 98
     },
     {
@@ -945,55 +961,55 @@
       },
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657537",
       "type": 96
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657538",
       "type": 98
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657538",
       "type": 98
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657538",
       "type": 106
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657538",
       "type": 106
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657538",
       "type": 107
     },
     {
@@ -1002,19 +1018,19 @@
       },
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657538",
       "type": 107
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657538",
       "type": 108
     },
     {
@@ -1024,37 +1040,37 @@
       },
       "phase": 1,
       "source": {
-        "id": 3,
+        "id": 4,
         "type": 14
       },
-      "time": "17960806",
+      "time": "24657538",
       "type": 119
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657538",
       "type": 108
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960806",
+      "time": "24657539",
       "type": 109
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 109
     },
     {
@@ -1064,105 +1080,91 @@
       },
       "phase": 1,
       "source": {
-        "id": 4,
+        "id": 5,
         "type": 28
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 144
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 130
     },
     {
       "params": {
         "source_dependency": {
-          "id": 4,
+          "id": 5,
           "type": 28
         }
       },
       "phase": 0,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 145
     },
     {
       "params": {
         "source_dependency": {
-          "id": 2,
+          "id": 3,
           "type": 1
         }
       },
       "phase": 0,
       "source": {
-        "id": 4,
+        "id": 5,
         "type": 28
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 145
     },
     {
       "phase": 1,
       "source": {
-        "id": 4,
+        "id": 5,
         "type": 28
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 23
     },
     {
       "params": {
-        "new_config": {
-          "source": "UNKNOWN"
-        }
+        "pac_string": "PROXY 10.31.146.25:8888"
       },
       "phase": 0,
       "source": {
         "id": 5,
-        "type": 0
-      },
-      "time": "17960807",
-      "type": 27
-    },
-    {
-      "params": {
-        "pac_string": "DIRECT"
-      },
-      "phase": 0,
-      "source": {
-        "id": 4,
         "type": 28
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 25
     },
     {
       "phase": 2,
       "source": {
-        "id": 4,
+        "id": 5,
         "type": 28
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 23
     },
     {
       "params": {
-        "proxy_server": "DIRECT"
+        "proxy_server": "PROXY 10.31.146.25:8888"
       },
       "phase": 0,
       "source": {
-        "id": 4,
+        "id": 5,
         "type": 28
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 146
     },
     {
@@ -1171,7 +1173,7 @@
         "original_url": "http://mengmengdaimage.oss-cn-shanghai.aliyuncs.com/",
         "priority": "MEDIUM",
         "source_dependency": {
-          "id": 4,
+          "id": 5,
           "type": 28
         },
         "url": "http://mengmengdaimage.oss-cn-shanghai.aliyuncs.com/",
@@ -1182,7 +1184,7 @@
         "id": 6,
         "type": 15
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 131
     },
     {
@@ -1194,10 +1196,10 @@
       },
       "phase": 0,
       "source": {
-        "id": 4,
+        "id": 5,
         "type": 28
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 133
     },
     {
@@ -1209,7 +1211,7 @@
         "id": 6,
         "type": 15
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 132
     },
     {
@@ -1218,7 +1220,7 @@
         "id": 6,
         "type": 15
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 132
     },
     {
@@ -1227,20 +1229,8 @@
         "id": 6,
         "type": 15
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 136
-    },
-    {
-      "params": {
-        "host_and_port": "mengmengdaimage.oss-cn-shanghai.aliyuncs.com:80"
-      },
-      "phase": 0,
-      "source": {
-        "id": 6,
-        "type": 15
-      },
-      "time": "17960807",
-      "type": 90
     },
     {
       "phase": 1,
@@ -1248,7 +1238,7 @@
         "id": 6,
         "type": 15
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 86
     },
     {
@@ -1258,231 +1248,105 @@
       "phase": 1,
       "source": {
         "id": 7,
-        "type": 6
+        "type": 3
       },
-      "time": "17960807",
+      "time": "24657539",
       "type": 82
+    },
+    {
+      "params": {
+        "source_dependency": {
+          "id": 7,
+          "type": 3
+        }
+      },
+      "phase": 1,
+      "source": {
+        "id": 8,
+        "type": 22
+      },
+      "time": "24657539",
+      "type": 34
     },
     {
       "phase": 1,
       "source": {
         "id": 7,
+        "type": 3
+      },
+      "time": "24657539",
+      "type": 83
+    },
+    {
+      "params": {
+        "host_and_port": "10.31.146.25:8888"
+      },
+      "phase": 0,
+      "source": {
+        "id": 8,
+        "type": 22
+      },
+      "time": "24657540",
+      "type": 90
+    },
+    {
+      "phase": 1,
+      "source": {
+        "id": 8,
+        "type": 22
+      },
+      "time": "24657540",
+      "type": 86
+    },
+    {
+      "params": {
+        "group_name": "mengmengdaimage.oss-cn-shanghai.aliyuncs.com:80"
+      },
+      "phase": 1,
+      "source": {
+        "id": 9,
         "type": 6
       },
-      "time": "17960807",
+      "time": "24657540",
+      "type": 82
+    },
+    {
+      "phase": 1,
+      "source": {
+        "id": 9,
+        "type": 6
+      },
+      "time": "24657540",
       "type": 83
     },
     {
       "params": {
         "address_family": 0,
         "allow_cached_response": true,
-        "host": "mengmengdaimage.oss-cn-shanghai.aliyuncs.com:80",
+        "host": "10.31.146.25:8888",
         "is_speculative": false
       },
       "phase": 1,
       "source": {
-        "id": 7,
+        "id": 9,
         "type": 6
       },
-      "time": "17960807",
+      "time": "24657540",
       "type": 3
     },
     {
-      "params": {
-        "source_dependency": {
-          "id": 7,
-          "type": 6
-        }
-      },
-      "phase": 1,
-      "source": {
-        "id": 8,
-        "type": 17
-      },
-      "time": "17960807",
-      "type": 34
-    },
-    {
-      "params": {
-        "address": "[2001:4860:4860::8888]:53"
-      },
-      "phase": 1,
-      "source": {
-        "id": 8,
-        "type": 17
-      },
-      "time": "17960808",
-      "type": 76
-    },
-    {
-      "params": {
-        "net_error": -109
-      },
       "phase": 2,
       "source": {
-        "id": 8,
-        "type": 17
-      },
-      "time": "17960809",
-      "type": 76
-    },
-    {
-      "phase": 2,
-      "source": {
-        "id": 8,
-        "type": 17
-      },
-      "time": "17960809",
-      "type": 34
-    },
-    {
-      "params": {
-        "cached": false,
-        "ipv6_available": false
-      },
-      "phase": 0,
-      "source": {
-        "id": 7,
+        "id": 9,
         "type": 6
       },
-      "time": "17960809",
-      "type": 4
-    },
-    {
-      "phase": 0,
-      "source": {
-        "id": 7,
-        "type": 6
-      },
-      "time": "17960809",
-      "type": 7
-    },
-    {
-      "params": {
-        "host": "mengmengdaimage.oss-cn-shanghai.aliyuncs.com",
-        "source_dependency": {
-          "id": 7,
-          "type": 6
-        }
-      },
-      "phase": 1,
-      "source": {
-        "id": 9,
-        "type": 12
-      },
-      "time": "17960809",
-      "type": 8
-    },
-    {
-      "phase": 0,
-      "source": {
-        "id": 9,
-        "type": 12
-      },
-      "time": "17960809",
-      "type": 10
-    },
-    {
-      "phase": 1,
-      "source": {
-        "id": 9,
-        "type": 12
-      },
-      "time": "17960809",
-      "type": 16
-    },
-    {
-      "params": {
-        "attempt_number": 1
-      },
-      "phase": 0,
-      "source": {
-        "id": 9,
-        "type": 12
-      },
-      "time": "17960809",
-      "type": 11
+      "time": "24657540",
+      "type": 3
     },
     {
       "params": {
         "source_dependency": {
           "id": 9,
-          "type": 12
-        }
-      },
-      "phase": 0,
-      "source": {
-        "id": 7,
-        "type": 6
-      },
-      "time": "17960809",
-      "type": 13
-    },
-    {
-      "params": {
-        "priority": "MEDIUM",
-        "source_dependency": {
-          "id": 7,
-          "type": 6
-        }
-      },
-      "phase": 0,
-      "source": {
-        "id": 9,
-        "type": 12
-      },
-      "time": "17960821",
-      "type": 14
-    },
-    {
-      "params": {
-        "attempt_number": 1
-      },
-      "phase": 0,
-      "source": {
-        "id": 9,
-        "type": 12
-      },
-      "time": "17960866",
-      "type": 12
-    },
-    {
-      "params": {
-        "address_list": [
-          "106.14.228.182:0",
-          "106.14.228.177:0"
-        ]
-      },
-      "phase": 2,
-      "source": {
-        "id": 9,
-        "type": 12
-      },
-      "time": "17960866",
-      "type": 16
-    },
-    {
-      "phase": 2,
-      "source": {
-        "id": 9,
-        "type": 12
-      },
-      "time": "17960866",
-      "type": 8
-    },
-    {
-      "phase": 2,
-      "source": {
-        "id": 7,
-        "type": 6
-      },
-      "time": "17960867",
-      "type": 3
-    },
-    {
-      "params": {
-        "source_dependency": {
-          "id": 7,
           "type": 6
         }
       },
@@ -1491,14 +1355,13 @@
         "id": 10,
         "type": 8
       },
-      "time": "17960867",
+      "time": "24657540",
       "type": 34
     },
     {
       "params": {
         "address_list": [
-          "106.14.228.182:80",
-          "106.14.228.177:80"
+          "10.31.146.25:8888"
         ]
       },
       "phase": 1,
@@ -1506,19 +1369,19 @@
         "id": 10,
         "type": 8
       },
-      "time": "17960867",
+      "time": "24657540",
       "type": 35
     },
     {
       "params": {
-        "address": "106.14.228.182:80"
+        "address": "10.31.146.25:8888"
       },
       "phase": 1,
       "source": {
         "id": 10,
         "type": 8
       },
-      "time": "17960867",
+      "time": "24657540",
       "type": 36
     },
     {
@@ -1527,19 +1390,19 @@
         "id": 10,
         "type": 8
       },
-      "time": "17960896",
+      "time": "24657552",
       "type": 36
     },
     {
       "params": {
-        "source_address": "10.31.4.131:51820"
+        "source_address": "10.31.4.126:45959"
       },
       "phase": 2,
       "source": {
         "id": 10,
         "type": 8
       },
-      "time": "17960896",
+      "time": "24657552",
       "type": 35
     },
     {
@@ -1551,43 +1414,43 @@
       },
       "phase": 0,
       "source": {
-        "id": 7,
+        "id": 9,
         "type": 6
       },
-      "time": "17960896",
+      "time": "24657553",
       "type": 84
     },
     {
       "phase": 2,
       "source": {
-        "id": 7,
+        "id": 9,
         "type": 6
       },
-      "time": "17960896",
+      "time": "24657553",
       "type": 83
     },
     {
       "phase": 2,
       "source": {
-        "id": 7,
+        "id": 9,
         "type": 6
       },
-      "time": "17960896",
+      "time": "24657553",
       "type": 82
     },
     {
       "params": {
         "source_dependency": {
-          "id": 7,
+          "id": 9,
           "type": 6
         }
       },
       "phase": 0,
       "source": {
-        "id": 6,
-        "type": 15
+        "id": 8,
+        "type": 22
       },
-      "time": "17960896",
+      "time": "24657553",
       "type": 93
     },
     {
@@ -1599,10 +1462,97 @@
       },
       "phase": 0,
       "source": {
+        "id": 8,
+        "type": 22
+      },
+      "time": "24657553",
+      "type": 94
+    },
+    {
+      "phase": 2,
+      "source": {
+        "id": 8,
+        "type": 22
+      },
+      "time": "24657553",
+      "type": 86
+    },
+    {
+      "params": {
+        "source_dependency": {
+          "id": 8,
+          "type": 22
+        }
+      },
+      "phase": 1,
+      "source": {
+        "id": 10,
+        "type": 8
+      },
+      "time": "24657553",
+      "type": 38
+    },
+    {
+      "params": {
+        "source_dependency": {
+          "id": 8,
+          "type": 22
+        }
+      },
+      "phase": 0,
+      "source": {
+        "id": 7,
+        "type": 3
+      },
+      "time": "24657553",
+      "type": 84
+    },
+    {
+      "phase": 2,
+      "source": {
+        "id": 7,
+        "type": 3
+      },
+      "time": "24657553",
+      "type": 83
+    },
+    {
+      "phase": 2,
+      "source": {
+        "id": 7,
+        "type": 3
+      },
+      "time": "24657553",
+      "type": 82
+    },
+    {
+      "params": {
+        "source_dependency": {
+          "id": 7,
+          "type": 3
+        }
+      },
+      "phase": 0,
+      "source": {
         "id": 6,
         "type": 15
       },
-      "time": "17960896",
+      "time": "24657553",
+      "type": 93
+    },
+    {
+      "params": {
+        "source_dependency": {
+          "id": 8,
+          "type": 22
+        }
+      },
+      "phase": 0,
+      "source": {
+        "id": 6,
+        "type": 15
+      },
+      "time": "24657553",
       "type": 94
     },
     {
@@ -1611,7 +1561,7 @@
         "id": 6,
         "type": 15
       },
-      "time": "17960897",
+      "time": "24657553",
       "type": 86
     },
     {
@@ -1623,10 +1573,10 @@
       },
       "phase": 1,
       "source": {
-        "id": 10,
-        "type": 8
+        "id": 8,
+        "type": 22
       },
-      "time": "17960897",
+      "time": "24657553",
       "type": 38
     },
     {
@@ -1635,7 +1585,7 @@
         "id": 6,
         "type": 15
       },
-      "time": "17960897",
+      "time": "24657553",
       "type": 136
     },
     {
@@ -1647,16 +1597,16 @@
       },
       "phase": 0,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960897",
+      "time": "24657553",
       "type": 137
     },
     {
       "params": {
         "source_dependency": {
-          "id": 2,
+          "id": 3,
           "type": 1
         }
       },
@@ -1665,16 +1615,16 @@
         "id": 6,
         "type": 15
       },
-      "time": "17960897",
+      "time": "24657553",
       "type": 139
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960897",
+      "time": "24657553",
       "type": 130
     },
     {
@@ -1683,103 +1633,103 @@
         "id": 6,
         "type": 15
       },
-      "time": "17960897",
+      "time": "24657553",
       "type": 131
     },
     {
       "phase": 2,
       "source": {
-        "id": 4,
+        "id": 5,
         "type": 28
       },
-      "time": "17960897",
+      "time": "24657553",
       "type": 144
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960897",
+      "time": "24657554",
       "type": 151
     },
     {
       "params": {
         "headers": [
           "Host: mengmengdaimage.oss-cn-shanghai.aliyuncs.com",
-          "Connection: keep-alive",
-          "User-Agent: com.malin.chromium/1 (Linux; U; Android 6.0.1; zh_CN; OPPO R9 Plusm A; Build/MMB29M; Cronet/65.0.3289.0)",
+          "Proxy-Connection: keep-alive",
+          "User-Agent: com.malin.chromium/1 (Linux; U; Android 8.1.0; zh_CN_#Hans; Nexus 6P; Build/OPP6.171019.012; Cronet/65.0.3289.0)",
           "Accept-Encoding: gzip, deflate"
         ],
-        "line": "GET /image.json HTTP/1.1\r\n"
+        "line": "GET http://mengmengdaimage.oss-cn-shanghai.aliyuncs.com/image.json HTTP/1.1\r\n"
       },
       "phase": 0,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960897",
+      "time": "24657554",
       "type": 152
     },
     {
       "params": {
-        "byte_count": 254
+        "byte_count": 319
       },
       "phase": 0,
       "source": {
         "id": 10,
         "type": 8
       },
-      "time": "17960898",
+      "time": "24657554",
       "type": 63
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960898",
+      "time": "24657554",
       "type": 151
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960898",
+      "time": "24657554",
       "type": 156
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17960898",
+      "time": "24657554",
       "type": 278
     },
     {
       "params": {
-        "byte_count": 832
+        "byte_count": 466
       },
       "phase": 0,
       "source": {
         "id": 10,
         "type": 8
       },
-      "time": "17961102",
+      "time": "24657874",
       "type": 65
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961102",
+      "time": "24657874",
       "type": 278
     },
     {
@@ -1787,90 +1737,90 @@
         "headers": [
           "HTTP/1.1 200 OK",
           "Server: AliyunOSS",
-          "Date: Wed, 03 Jan 2018 07:16:41 GMT",
+          "Date: Sun, 29 Apr 2018 13:51:59 GMT",
           "Content-Type: application/json",
           "Transfer-Encoding: chunked",
-          "Connection: keep-alive",
           "Vary: Accept-Encoding",
-          "x-oss-request-id: 5A4C835950AD7F29E2412AE9",
+          "x-oss-request-id: 5AE5CDFF8FA8AA40B6981FB9",
           "Last-Modified: Tue, 31 Jan 2017 07:34:52 GMT",
           "x-oss-object-type: Normal",
           "x-oss-hash-crc64ecma: 10602635111890767688",
           "x-oss-storage-class: Standard",
           "Content-MD5: r/mWkNajbAsfPmqXf/dnBw==",
-          "x-oss-server-time: 170",
-          "Content-Encoding: gzip"
+          "x-oss-server-time: 91",
+          "Content-Encoding: gzip",
+          "Proxy-Connection: keep-alive"
         ]
       },
       "phase": 0,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961102",
+      "time": "24657874",
       "type": 157
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 156
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 112
     },
     {
       "params": {
-        "buf_len": 468,
+        "buf_len": 464,
         "index": 0,
         "offset": 0,
         "truncate": true
       },
       "phase": 1,
       "source": {
-        "id": 3,
+        "id": 4,
         "type": 14
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 121
     },
     {
       "params": {
-        "bytes_copied": 468
+        "bytes_copied": 464
       },
       "phase": 2,
       "source": {
-        "id": 3,
+        "id": 4,
         "type": 14
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 121
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 112
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 114
     },
     {
@@ -1882,10 +1832,10 @@
       },
       "phase": 1,
       "source": {
-        "id": 3,
+        "id": 4,
         "type": 14
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 121
     },
     {
@@ -1894,28 +1844,28 @@
       },
       "phase": 2,
       "source": {
-        "id": 3,
+        "id": 4,
         "type": 14
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 121
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 114
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 112
     },
     {
@@ -1927,10 +1877,10 @@
       },
       "phase": 1,
       "source": {
-        "id": 3,
+        "id": 4,
         "type": 14
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 121
     },
     {
@@ -1939,37 +1889,37 @@
       },
       "phase": 2,
       "source": {
-        "id": 3,
+        "id": 4,
         "type": 14
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 121
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 112
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 98
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961103",
+      "time": "24657875",
       "type": 98
     },
     {
@@ -1978,55 +1928,67 @@
       },
       "phase": 0,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961104",
+      "time": "24657875",
       "type": 105
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961104",
+      "time": "24657875",
       "type": 96
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961104",
+      "time": "24657875",
       "type": 98
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961109",
+      "time": "24657885",
       "type": 98
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961109",
+      "time": "24657885",
       "type": 158
+    },
+    {
+      "params": {
+        "byte_count": 376
+      },
+      "phase": 0,
+      "source": {
+        "id": 10,
+        "type": 8
+      },
+      "time": "24657886",
+      "type": 65
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961109",
+      "time": "24657886",
       "type": 158
     },
     {
@@ -2038,10 +2000,10 @@
       },
       "phase": 1,
       "source": {
-        "id": 3,
+        "id": 4,
         "type": 14
       },
-      "time": "17961109",
+      "time": "24657886",
       "type": 121
     },
     {
@@ -2050,10 +2012,10 @@
       },
       "phase": 2,
       "source": {
-        "id": 3,
+        "id": 4,
         "type": 14
       },
-      "time": "17961109",
+      "time": "24657886",
       "type": 121
     },
     {
@@ -2062,10 +2024,10 @@
       },
       "phase": 0,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961110",
+      "time": "24657886",
       "type": 100
     },
     {
@@ -2074,46 +2036,46 @@
       },
       "phase": 0,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961110",
+      "time": "24657886",
       "type": 101
     },
     {
       "phase": 1,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961112",
+      "time": "24657888",
       "type": 158
     },
     {
       "phase": 2,
       "source": {
-        "id": 10,
-        "type": 8
+        "id": 8,
+        "type": 22
       },
-      "time": "17961112",
+      "time": "24657888",
       "type": 38
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961112",
+      "time": "24657888",
       "type": 158
     },
     {
       "phase": 2,
       "source": {
-        "id": 2,
+        "id": 3,
         "type": 1
       },
-      "time": "17961115",
+      "time": "24657891",
       "type": 2
     }
   ],
@@ -2123,20 +2085,7 @@
     "hostResolverInfo": {
       "cache": {
         "capacity": 1000,
-        "entries": [
-          {
-            "address_family": 1,
-            "addresses": [
-              "106.14.228.182",
-              "106.14.228.177"
-            ],
-            "expiration": "18020866",
-            "flags": 4,
-            "hostname": "mengmengdaimage.oss-cn-shanghai.aliyuncs.com",
-            "network_changes": 0,
-            "ttl": -1000
-          }
-        ],
+        "entries": [],
         "network_changes": 0
       }
     },
@@ -2145,9 +2094,15 @@
     },
     "proxySettings": {
       "effective": {
+        "single_proxy": [
+          "10.31.146.25:8888"
+        ],
         "source": "UNKNOWN"
       },
       "original": {
+        "single_proxy": [
+          "10.31.146.25:8888"
+        ],
         "source": "UNKNOWN"
       }
     },
@@ -2180,20 +2135,8 @@
     "socketPoolInfo": [
       {
         "connecting_socket_count": 0,
-        "groups": {
-          "mengmengdaimage.oss-cn-shanghai.aliyuncs.com:80": {
-            "active_socket_count": 0,
-            "backup_job_timer_is_running": false,
-            "connect_jobs": [],
-            "idle_sockets": [
-              10
-            ],
-            "is_stalled": false,
-            "pending_request_count": 0
-          }
-        },
         "handed_out_socket_count": 0,
-        "idle_socket_count": 1,
+        "idle_socket_count": 0,
         "max_socket_count": 256,
         "max_sockets_per_group": 6,
         "name": "transport_socket_pool",
@@ -2209,6 +2152,72 @@
         "name": "ssl_socket_pool",
         "pool_generation_number": 0,
         "type": "ssl_socket_pool"
+      },
+      {
+        "connecting_socket_count": 0,
+        "groups": {
+          "mengmengdaimage.oss-cn-shanghai.aliyuncs.com:80": {
+            "active_socket_count": 0,
+            "backup_job_timer_is_running": false,
+            "connect_jobs": [],
+            "idle_sockets": [
+              8
+            ],
+            "is_stalled": false,
+            "pending_request_count": 0
+          }
+        },
+        "handed_out_socket_count": 0,
+        "idle_socket_count": 1,
+        "max_socket_count": 32,
+        "max_sockets_per_group": 6,
+        "name": "10.31.146.25:8888",
+        "nested_pools": [
+          {
+            "connecting_socket_count": 0,
+            "groups": {
+              "mengmengdaimage.oss-cn-shanghai.aliyuncs.com:80": {
+                "active_socket_count": 1,
+                "backup_job_timer_is_running": false,
+                "connect_jobs": [],
+                "idle_sockets": [],
+                "is_stalled": false,
+                "pending_request_count": 0
+              }
+            },
+            "handed_out_socket_count": 1,
+            "idle_socket_count": 0,
+            "max_socket_count": 32,
+            "max_sockets_per_group": 6,
+            "name": "transport_socket_pool",
+            "pool_generation_number": 0,
+            "type": "transport_socket_pool"
+          },
+          {
+            "connecting_socket_count": 0,
+            "handed_out_socket_count": 0,
+            "idle_socket_count": 0,
+            "max_socket_count": 32,
+            "max_sockets_per_group": 6,
+            "name": "ssl_socket_pool",
+            "nested_pools": [
+              {
+                "connecting_socket_count": 0,
+                "handed_out_socket_count": 0,
+                "idle_socket_count": 0,
+                "max_socket_count": 32,
+                "max_sockets_per_group": 6,
+                "name": "transport_socket_pool",
+                "pool_generation_number": 0,
+                "type": "transport_socket_pool"
+              }
+            ],
+            "pool_generation_number": 0,
+            "type": "ssl_socket_pool"
+          }
+        ],
+        "pool_generation_number": 0,
+        "type": "http_proxy_socket_pool"
       }
     ],
     "spdySessionInfo": [],
