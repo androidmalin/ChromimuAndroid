@@ -1,24 +1,56 @@
+// Copyright 2014 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
 package org.chromium.net;
 
+/**
+ * Version based on chrome/VERSION.
+ * {@hide as it's only used internally}
+ */
 public class ApiVersion {
-    private static final int API_LEVEL = 8;
     private static final String CRONET_VERSION = "65.0.3289.0";
-    private static final String LAST_CHANGE = "b357085d75686a4a276a4b829b7faff0e1aaa897-refs/heads/master@{#522969}";
+    private static final int API_LEVEL = 8;
+    /**
+     * The minimum API level of implementations that are compatible with this API.
+     * The last API level which broke backwards API compatibility. In other words, the
+     * Cronet API that this class is part of won't work with Cronet implementations that implement
+     * API levels less than this value. That is if
+     * ImplVersion.getApiLevel() < ApiVersion.getApiLevel(), then the Cronet implementation
+     * providing ImplVersion cannot be used with the Cronet API providing ApiVersion; if they are
+     * used together various unexpected Errors, like AbstractMethodError, may result.
+     */
     private static final int MIN_COMPATIBLE_API_LEVEL = 3;
+    private static final String LAST_CHANGE = "b357085d75686a4a276a4b829b7faff0e1aaa897-refs/heads/master@{#522969}";
 
-    private ApiVersion() {
-    }
+    /**
+     * Private constructor. All members of this class should be static.
+     */
+    private ApiVersion() {}
 
     public static String getCronetVersionWithLastChange() {
-        return "65.0.3289.0@" + LAST_CHANGE.substring(0, 8);
+        return CRONET_VERSION + "@" + LAST_CHANGE.substring(0, 8);
     }
 
+    /**
+     * Returns API level of the API linked into the application. This is the maximum API
+     * level the application can use, even if the application is run with a newer implementation.
+     */
     public static int getMaximumAvailableApiLevel() {
-        return 8;
+        return API_LEVEL;
     }
 
+    /**
+     * The minimum API level of implementations that are compatible with this API.
+     * Returns the last API level which broke backwards API compatibility. In other words, the
+     * Cronet API that this class is part of won't work with Cronet implementations that implement
+     * API levels less than this value. That is if
+     * ImplVersion.getApiLevel() < ApiVersion.getApiLevel(), then the Cronet implementation
+     * providing ImplVersion cannot be used with the Cronet API providing ApiVersion; if they are
+     * used together various unexpected Errors, like AbstractMethodError, may result.
+     */
     public static int getApiLevel() {
-        return 3;
+        return MIN_COMPATIBLE_API_LEVEL;
     }
 
     public static String getCronetVersion() {

@@ -573,7 +573,7 @@ public class CronetUrlRequestContext extends CronetEngineBase {
         return loggingLevel;
     }
 
-    private static int convertConnectionTypeToApiValue(int type) {
+    private static int convertConnectionTypeToApiValue(@EffectiveConnectionType int type) {
         switch (type) {
             case EffectiveConnectionType.TYPE_OFFLINE:
                 return EFFECTIVE_CONNECTION_TYPE_OFFLINE;

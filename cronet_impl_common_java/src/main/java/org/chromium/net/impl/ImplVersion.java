@@ -4,18 +4,16 @@
 
 package org.chromium.net.impl;
 
-// chromium/src/out/Release/gen/components/cronet/android/templates/cronet_impl_version_java/org/chromium/net/impl/ImplVersion.java
 // Version based on chrome/VERSION.
 public class ImplVersion {
     private static final String CRONET_VERSION = "65.0.3289.0";
     private static final int API_LEVEL = 8;
     private static final String LAST_CHANGE = "b357085d75686a4a276a4b829b7faff0e1aaa897-refs/heads/master@{#522969}";
 
-    /**
-     * Private constructor. All members of this class should be static.
-     */
-    private ImplVersion() {
-    }
+   /**
+    * Private constructor. All members of this class should be static.
+    */
+    private ImplVersion() {}
 
     public static String getCronetVersionWithLastChange() {
         return CRONET_VERSION + "@" + LAST_CHANGE.substring(0, 8);

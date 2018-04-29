@@ -1,5 +1,17 @@
 
 
+module
+cronet_api,
+cronet_impl_common_java,
+cronet_impl_native_java,
+cronet_impl_platform_java
+分别是从对应的src.jar中解压复制出来的.
+Cronet_Release/cronet/cronet_api-src.jar
+Cronet_Release/cronet/cronet_impl_common_java-src.jar
+Cronet_Release/cronet/cronet_impl_native_java-src.jar
+Cronet_Release/cronet/cronet_impl_platform_java-src.jar
+
+
 使用
 https://chromium.googlesource.com/chromium/src.git/+/65.0.3289.0/components/cronet/android/build_instructions.md
 

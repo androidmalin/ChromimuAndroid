@@ -1,6 +1,5 @@
 package org.chromium.net;
 
-//chromium/src/out/Release/gen/net/android/net_errors_java/java_cpp_template/org/chromium/net/NetError.java
 public class NetError {
     public static final int ERR_IO_PENDING = -1;
     public static final int ERR_FAILED = -2;

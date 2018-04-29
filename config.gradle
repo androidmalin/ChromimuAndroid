@@ -9,17 +9,17 @@ ext {
 
     dependencies = [
             'findbugs:jsr305'         : 'com.google.code.findbugs:jsr305:3.0.2',
-            'design'                  : 'com.android.support:design:27.0.2',
-            'multidex'                : 'com.android.support:multidex:1.0.2',
-            'multidex-instrumentation': 'com.android.support:multidex-instrumentation:1.0.2',
-            'appcompat-v7'            : 'com.android.support:appcompat-v7:27.0.2',
-            'support-v4'              : 'com.android.support:support-v4:27.0.2',
+            'design'                  : 'com.android.support:design:27.1.1',
+            'multidex'                : 'com.android.support:multidex:1.0.3',
+            'multidex-instrumentation': 'com.android.support:multidex-instrumentation:1.0.3',
+            'appcompat-v7'            : 'com.android.support:appcompat-v7:27.1.1',
+            'support-v4'              : 'com.android.support:support-v4:27.1.1',
             'support-compat'          : 'com.android.support:support-compat:24.2.0',
-            'exifinterface'           : 'com.android.support:exifinterface:27.0.2',
-            'recyclerview'            : 'com.android.support:recyclerview-v7:27.0.2',
-            'support-annotations'     : 'com.android.support:support-annotations:27.0.2',
-            'leakcanary-android'      : 'com.squareup.leakcanary:leakcanary-android:1.5.1',
-            'leakcanary-android-no-op': 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1',
+            'exifinterface'           : 'com.android.support:exifinterface:27.1.1',
+            'recyclerview'            : 'com.android.support:recyclerview-v7:27.1.1',
+            'support-annotations'     : 'com.android.support:support-annotations:27.1.1',
+            'leakcanary-android'      : 'com.squareup.leakcanary:leakcanary-android:1.5.4',
+            'leakcanary-android-no-op': 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4',
     ]
 
 

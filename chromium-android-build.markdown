@@ -7,6 +7,10 @@ tags: chromium
 编译需要大约3小时.安装官网给出的方案,即可.
 
 [linux_build_instructions](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md)
+[android_build_instructions](https://chromium.googlesource.com/chromium/src/+/master/components/cronet/android/build_instructions.md)
+
+
+
 
 
 解决办法:
@@ -17,10 +21,11 @@ tags: chromium
 2.删除历史构建缓存目录
 `rm -rf out/Default`
 
-3.设置构建缓存目录为/out/Default
-`gn gen out/Default`
+3.创建构建缓存目录
+`mkdir out/Default`
 
-4.生成配置文件
+
+4.对构建进行配置
 `vim out/Default/args.gn`
 
 内容如下
@@ -29,13 +34,15 @@ target_os = "android"
 target_cpu = "arm"  # (default)
 is_debug = false  # (default)
 # Other args you may want to set:
+# is_component_build = false,表示只编译Cronet模块
 is_component_build = false
+# is_clang 需要为true,false的话,会失败.
 is_clang = true
 symbol_level = 1  # Faster build with fewer symbols. -g1 rather than -g2
 enable_incremental_javac = false  # Much faster; experimental
 android_ndk_root = "/home/malin/ndk/android-ndk-r12b"
 android_sdk_root = "/home/malin/sdk"
-android_sdk_build_tools_version = "27.0.1"
+android_sdk_build_tools_version = "27.0.3"
 disable_file_support = true
 disable_ftp_support = true
 enable_websockets = false
@@ -44,8 +51,14 @@ use_platform_icu_alternatives = true
 
 字段含义请看这篇文章(懒人chromium net android移植指南)[http://hanpfei.github.io/2016/11/11/lazy-chromium-net-android-porting-guide/]
 
+字段含义[https://www.chromium.org/developers/gn-build-configuration](https://www.chromium.org/developers/gn-build-configuration)
+is_component_build = false,表示只编译Cronet模块
 
-5.执行如下命令生成cronet so文件：
+5.产生ninja构建所需的 .ninja 文件。
+`gn gen out/Default`
+
+
+6.编译cronet模块：
 `ninja -C out/Default/ cronet`
 
 
@@ -53,7 +66,7 @@ use_platform_icu_alternatives = true
 You can get a list of all of the other build targets from GN by running gn ls out/Default from the command line. To compile one, pass the GN label to Ninja with no preceding “//” (so, for //chrome/test:unit_tests use ninja -C out/Default chrome/test:unit_tests).
 ```
 
-6.执行如下命令生成cronet Java层代码的jar包：
+7.执行如下命令生成cronet Java层代码的jar包：
 
 
 错误1.
@@ -106,7 +119,7 @@ jar包需要如下命令
 
 
 
-`ninja -C out/Default/ components/cronet/android:jar_cronet_sample_source`
+`ninja -C out/Default/ components/cronet/android:url_request_error_java`
 
 ```
 malin@malin:/onet/malin/chromium/src/out/Default/lib.java$ tree -L 7
@@ -206,15 +219,52 @@ cronet_impl_platform_java.interface.jar
 cronet_impl_platform_java.jar
 
 
-f5dfb14f537bde791ff1a46e8c328c8b  url_java.jar
+`ninja -C out/Default/ components/cronet/android:cronet`
 
 
+二:使用自带的脚本编译cronet
+官方文档[hbuild_instructions.md](https://chromium.googlesource.com/chromium/src/+/master/components/cronet/android/build_instructions.md)
+1.Building Cronet for releases
+`./components/cronet/tools/cr_cronet.py gn --release --out_dir=out/Cronet_Release`
+执行完后,会在`out/Cronet_Release`目录下生成args.gn文件,同时生成相应的配置参数.
 
-========
-ninja -C out/Default/ components/cronet/android:cronet
-========
+```
+use_errorprone_java_compiler = true
+arm_use_neon = false
+target_os = "android"
+enable_websockets = false
+disable_file_support = true
+disable_ftp_support = true
+disable_brotli_filter = false
+use_platform_icu_alternatives = true
+enable_reporting = false
+is_component_build = false
+ignore_elf32_limitations = true
+use_partition_alloc = false
+include_transport_security_state_preload_list = false
+is_debug = false
+is_official_build = true
+```
 
 
+2.可以修改,配置文件
+`vim out/Cronet_Release/args.gn`
+增加
+```
+target_cpu = "arm"
+android_ndk_root = "/home/malin/ndk/android-ndk-r12b"
+android_sdk_root = "/home/malin/sdk"
+android_sdk_build_tools_version = "27.0.3"
+```
+说明默认的sdk,ndk工具位于`src/third_party/android_tools`
 
+3.
+`gn gen out/Cronet_Release`
+
+4.Building Cronet for releases
+`ninja -C out/Cronet_Release cronet_package`
+
+
+以官方文档为准,不要被别人的博客左右.
 其他参考文章有些不一样
 [Chromium Android编译指南](http://www.jianshu.com/p/5fce18cbe016)
